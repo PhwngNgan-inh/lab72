@@ -1,4 +1,5 @@
 
+import com.mycompany.student.Students;
 import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 
@@ -14,20 +15,20 @@ import org.testng.annotations.Test;
 public class StudentTest {
     @Test
     public void testGetName() {
-        Student s = new Student("S001", "Alice", 20);
+        Students s = new Students("S001", "Alice", 20);
         assertEquals(s.getName(), "Alice");
     }
 
     @Test
     public void testSetAge() {
-        Student s = new Student("S002", "Bob", 22);
+        Students s = new Students("S002", "Bob", 22);
         s.setAge(25);
         assertEquals(s.getAge(), 25);
     }
 
     @Test
     public void testUpdateName() {
-        Student s = new Student("S003", "Charlie", 21);
+        Students s = new Students("S003", "Charlie", 21);
         s.updateName("David");
         assertEquals(s.getName(), "David");
     }
