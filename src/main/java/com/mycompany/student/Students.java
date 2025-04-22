@@ -6,7 +6,7 @@ package com.mycompany.student;
 
 /**
  *
- * @author QUOC
+ * @author QUOC ngann
  */
 public class Students {
 
